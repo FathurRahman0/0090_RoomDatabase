@@ -1,5 +1,4 @@
 package com.example.pertemuan_9.uicontroller
-
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -20,8 +19,33 @@ import com.example.pertemuan_9.view.DestinasiEntry
 import com.example.pertemuan_9.view.DestinasiHome
 import com.example.pertemuan_9.view.EntrySiswaScreen
 import com.example.pertemuan_9.view.HomeScreen
-
 @Composable
 fun SiswaApp(navController: NavHostController = rememberNavController()) {
     HostNavigasi(navController = navController)
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun SiswaTopAppBar(
+    title: String,
+    canNavigateBack: Boolean,
+    modifier: Modifier = Modifier,
+    scrollBehavior: TopAppBarScrollBehavior? = null,
+    navigateUp: () -> Unit = {}
+) {
+    CenterAlignedTopAppBar(
+        title = { Text(title) },
+        modifier = modifier,
+        scrollBehavior = scrollBehavior,
+        navigationIcon = {
+            if (canNavigateBack) {
+                IconButton(onClick = navigateUp) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                        contentDescription = stringResource(R.string.back)
+                    )
+                }
+            }
+        }
+    )
 }
