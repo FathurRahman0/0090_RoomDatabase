@@ -1,4 +1,5 @@
 package com.example.pertemuan_9.uicontroller
+
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -19,6 +20,8 @@ import com.example.pertemuan_9.view.DestinasiEntry
 import com.example.pertemuan_9.view.DestinasiHome
 import com.example.pertemuan_9.view.EntrySiswaScreen
 import com.example.pertemuan_9.view.HomeScreen
+
+
 @Composable
 fun SiswaApp(navController: NavHostController = rememberNavController()) {
     HostNavigasi(navController = navController)
