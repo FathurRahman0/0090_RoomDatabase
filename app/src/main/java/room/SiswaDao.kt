@@ -1,0 +1,4 @@
+package room
+
+interface SiswaDao {
+}
