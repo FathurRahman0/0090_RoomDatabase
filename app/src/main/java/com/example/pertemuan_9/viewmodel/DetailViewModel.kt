@@ -10,6 +10,10 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.SharingStarted
 import com.example.pertemuan_9.repositori.RepositoriSiswa
 import com.example.pertemuan_9.view.route.DestinasiDetailSiswa
+import com.example.pertemuan_9.room.Siswa
+import com.example.pertemuan_9.viewmodel.DetailSiswa
+import com.example.pertemuan_9.viewmodel.toDetailSiswa
+import com.example.pertemuan_9.viewmodel.toSiswa
 
 
 class DetailViewModel(

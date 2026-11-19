@@ -41,7 +41,7 @@ import com.example.pertemuan_9.uicontroller.SiswaTopAppBar
 import com.example.pertemuan_9.view.route.DestinasiDetailSiswa
 import com.example.pertemuan_9.viewmodel.DetailSiswaUiState
 import com.example.pertemuan_9.viewmodel.DetailViewModel
-import com.example.pertemuan_9.viewmodel.PenyediaViewModel
+import com.example.pertemuan_9.provider.PenyediaViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

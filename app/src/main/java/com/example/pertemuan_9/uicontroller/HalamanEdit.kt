@@ -14,7 +14,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pertemuan_9.view.EntrySiswaBody
 import com.example.pertemuan_9.view.route.DestinasiEditSiswa
 import com.example.pertemuan_9.viewmodel.EditViewModel
-import com.example.pertemuan_9.viewmodel.PenyediaViewModel
+import com.example.pertemuan_9.provider.PenyediaViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
